@@ -110,7 +110,7 @@ Older contract-restricted course materials are not republished here. Where they 
 
 ## About
 
-Created by [Ria Cheruvu](https://riacheruvu.github.io/), a trustworthy AI practitioner, technical educator, course creator, author, and lifelong learner who began working in technology at 14.
+Created by [Ria Cheruvu](https://riacheruvu.github.io/), a trustworthy AI practitioner, technical educator, course creator, author, and lifelong learner.
 
 ## AI collaboration note
 
