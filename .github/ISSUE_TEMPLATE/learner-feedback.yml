@@ -1,0 +1,48 @@
+name: Learner feedback
+description: An adult can share de-identified feedback from a learner.
+title: "[Learner feedback] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the field guide.
+
+        **An adult should submit this form.** Do not include a child's name, exact age, school, location, contact information, account name, private conversation, or other identifying detail.
+  - type: dropdown
+    id: activity
+    attributes:
+      label: Activity
+      options:
+        - AI in the Room?
+        - The Three Mystery Boxes
+        - The Data Backpack
+        - My AI Curiosity Plan
+        - My Mini Wrapped
+        - Seven Tiny Systems Labs
+        - The whole field guide
+    validations:
+      required: true
+  - type: textarea
+    id: helped
+    attributes:
+      label: What helped the learner think?
+      description: Describe a question, interaction, example, or moment without identifying the learner.
+    validations:
+      required: true
+  - type: textarea
+    id: improve
+    attributes:
+      label: What was confusing, missing, or less useful?
+  - type: textarea
+    id: next
+    attributes:
+      label: What should happen next?
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed names, schools, locations, contact information, and other identifying details.
+          required: true

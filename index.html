@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A playful, privacy-preserving field guide for investigating AI, data, models, and emerging technology.">
+  <meta name="theme-color" content="#fff8e8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f7a75'/%3E%3Cpath d='m32 15 4.5 11.5L48 31l-11.5 4.5L32 47l-4.5-11.5L16 31l11.5-4.5Z' fill='%23fff8e8'/%3E%3C/svg%3E">
+  <title>AI Field Guide for Young Minds</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the activities</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AI Field Guide for Young Minds home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>AI Field Guide for Young Minds</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#field-stops">Activities</a>
+      <a href="#use-guide">Use the guide</a>
+      <a href="#feedback">Feedback</a>
+      <button class="sound-toggle" type="button" aria-pressed="false" title="Toggle tiny interface sounds">
+        Sound off
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">A field guide for curious minds</p>
+        <h1>AI can do surprising things.<br><em>Let’s find out how.</em></h1>
+        <p class="hero-lede">
+          Investigate AI as a system you can test, question, use, and help shape—not
+          a mystery you simply have to accept.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#field-stops">Start exploring</a>
+          <button class="button secondary" id="surprise-me" type="button">Pick an activity for me</button>
+        </div>
+        <ul class="quiet-facts" aria-label="Resource features">
+          <li>No account</li>
+          <li>No personal data</li>
+          <li>Works offline</li>
+          <li>Best with conversation</li>
+        </ul>
+      </div>
+
+      <div class="hero-scene" aria-label="Pip, a small friendly guide, explores a field of questions">
+        <div class="sun" aria-hidden="true"></div>
+        <div class="cloud cloud-one" aria-hidden="true"></div>
+        <div class="cloud cloud-two" aria-hidden="true"></div>
+        <div class="hill hill-back" aria-hidden="true"></div>
+        <div class="hill hill-front" aria-hidden="true"></div>
+        <div class="mascot-wrap hero-pip">
+          <svg class="mascot" viewBox="0 0 180 180" role="img" aria-labelledby="pip-title pip-desc">
+            <title id="pip-title">Pip the question-collecting guide</title>
+            <desc id="pip-desc">A small round cream-colored robot with leaf-shaped ears, a teal backpack, and a magnifying glass.</desc>
+            <path class="pip-shadow" d="M43 156c22-13 70-14 96 0-25 13-72 14-96 0Z"/>
+            <path class="pip-leg" d="M67 127v25M112 127v25"/>
+            <path class="pip-foot" d="M55 155h25M101 155h25"/>
+            <path class="pip-pack" d="M124 65c19 4 25 20 20 41l-8 31-22-8 10-64Z"/>
+            <path class="pip-body" d="M51 61c9-19 67-21 79 0 9 17 8 57-2 72-13 20-59 20-75 0-11-14-12-53-2-72Z"/>
+            <path class="pip-ear" d="M56 64C36 54 28 34 35 19c18 8 30 24 29 42Z"/>
+            <path class="pip-ear" d="M124 63c19-10 27-29 21-44-18 7-30 23-29 41Z"/>
+            <circle class="pip-eye" cx="72" cy="86" r="8"/>
+            <circle class="pip-eye" cx="110" cy="86" r="8"/>
+            <circle class="pip-eye-shine" cx="75" cy="83" r="2"/>
+            <circle class="pip-eye-shine" cx="113" cy="83" r="2"/>
+            <path class="pip-mouth" d="M82 105c5 5 11 5 16 0"/>
+            <path class="pip-arm" d="M52 108c-15 3-21 13-24 23"/>
+            <path class="pip-arm" d="M127 106c11 1 18 7 22 14"/>
+            <circle class="glass-ring" cx="31" cy="135" r="15"/>
+            <path class="glass-handle" d="m20 146-11 12"/>
+            <path class="pip-star" d="m91 49 3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1 3-7Z"/>
+          </svg>
+          <p class="speech">Hi, I’m Pip. I collect good questions—not personal information.</p>
+        </div>
+        <span class="field-flower flower-one" aria-hidden="true">✿</span>
+        <span class="field-flower flower-two" aria-hidden="true">✦</span>
+        <span class="field-flower flower-three" aria-hidden="true">✿</span>
+      </div>
+    </section>
+
+    <section class="promise" aria-labelledby="promise-title">
+      <p class="eyebrow">One idea to carry</p>
+      <h2 id="promise-title">A good question can open any box.</h2>
+    </section>
+
+    <section class="field-stops" id="field-stops" aria-labelledby="stops-title">
+      <div class="section-heading">
+        <p class="eyebrow">Choose a field stop</p>
+        <h2 id="stops-title">Four ways to explore</h2>
+        <p>Go in order, jump around, or do one activity and come back later.</p>
+      </div>
+
+      <div class="activity-grid">
+        <article class="activity-card coral" data-activity="room">
+          <span class="activity-number">01</span>
+          <div class="activity-icon" aria-hidden="true">⌂</div>
+          <p class="activity-skill">Notice</p>
+          <h3>AI in the Room?</h3>
+          <p>Investigate an everyday object or service. Is AI really involved—or are we only guessing?</p>
+          <p class="card-takeaway"><strong>Takeaway:</strong> Trace the evidence before trusting the label.</p>
+          <p class="activity-meta">10–15 min · no AI needed</p>
+          <button class="button card-button" type="button" data-open="room">Open activity</button>
+        </article>
+
+        <article class="activity-card sky" data-activity="boxes">
+          <span class="activity-number">02</span>
+          <div class="activity-icon" aria-hidden="true">▣</div>
+          <p class="activity-skill">Test</p>
+          <h3>The Three Mystery Boxes</h3>
+          <p>Meet a rule-follower, a predictor, and a generator. Design tests to tell them apart.</p>
+          <p class="card-takeaway"><strong>Takeaway:</strong> Test a system’s limits, not only what it does well.</p>
+          <p class="activity-meta">15–20 min · interactive</p>
+          <button class="button card-button" type="button" data-open="boxes">Open activity</button>
+        </article>
+
+        <article class="activity-card leaf" data-activity="backpack">
+          <span class="activity-number">03</span>
+          <div class="activity-icon" aria-hidden="true">♧</div>
+          <p class="activity-skill">Question</p>
+          <h3>The Data Backpack</h3>
+          <p>Look inside an imaginary AI’s backpack. What examples are present, missing, duplicated, or private?</p>
+          <p class="card-takeaway"><strong>Takeaway:</strong> What an AI learns from shapes what it can notice.</p>
+          <p class="activity-meta">15 min · drawing friendly</p>
+          <button class="button card-button" type="button" data-open="backpack">Open activity</button>
+        </article>
+
+        <article class="activity-card gold" data-activity="plan">
+          <span class="activity-number">04</span>
+          <div class="activity-icon" aria-hidden="true">✦</div>
+          <p class="activity-skill">Choose</p>
+          <h3>My AI Curiosity Plan</h3>
+          <p>Decide what you’ll try, what help you want, what you’ll check, and what should stay yours.</p>
+          <p class="card-takeaway"><strong>Takeaway:</strong> You choose AI’s role in your learning process.</p>
+          <p class="activity-meta">5–10 min · before and after AI</p>
+          <button class="button card-button" type="button" data-open="plan">Open activity</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-trails" id="project-trails" aria-labelledby="trails-title">
+      <div class="section-heading">
+        <p class="eyebrow">Ready for a bigger build?</p>
+        <h2 id="trails-title">Two project trails</h2>
+        <p>Make a tiny data story, or change one rule and watch a whole system respond.</p>
+      </div>
+
+      <div class="trail-grid">
+        <article class="trail-card wrapped-trail">
+          <div class="trail-art chart-art" aria-hidden="true">
+            <span style="--bar: 42%"></span>
+            <span style="--bar: 68%"></span>
+            <span style="--bar: 54%"></span>
+            <span style="--bar: 88%"></span>
+          </div>
+          <div>
+            <p class="activity-skill">Make a data story</p>
+            <h3>My Mini Wrapped</h3>
+            <p>Choose something you enjoy, add four made-up or non-private numbers, and decide what story the data can—and cannot—tell.</p>
+            <p class="trail-mission"><strong>Your mission:</strong> Build a chart, then challenge its story.</p>
+            <p class="trail-learning"><strong>Takeaway:</strong> Data does not speak for itself. People choose what to collect, show, and say.</p>
+            <p class="activity-meta">15–25 min · no coding required</p>
+            <button class="button card-button" type="button" data-open="wrapped">Open project</button>
+          </div>
+        </article>
+
+        <article class="trail-card future-trail">
+          <div class="trail-art flock-art" aria-hidden="true">
+            <span>⌁</span><span>⌁</span><span>⌁</span><span>⌁</span><span>⌁</span>
+          </div>
+          <div>
+            <p class="activity-skill">Experiment with systems</p>
+            <h3>Seven Tiny Systems Labs</h3>
+            <p>Explore digital twins, 3D meshes, quantum pairs, linked records, spiking neurons, bird flocks, and computing energy.</p>
+            <p class="trail-mission"><strong>Your mission:</strong> Find the system beneath each buzzword.</p>
+            <p class="trail-learning"><strong>Takeaway:</strong> Big technologies become understandable when you inspect their rules, representations, and limits.</p>
+            <p class="activity-meta">5–30 min · choose one or explore all seven</p>
+            <button class="button card-button" type="button" data-open="future">Open project</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="activity-panel coral-panel" id="activity-room" hidden>
+      <div class="panel-inner">
+        <button class="close-panel" type="button" aria-label="Close activity">×</button>
+        <p class="eyebrow">Activity 01 · Notice</p>
+        <h2>AI in the Room?</h2>
+        <p class="panel-lede">Choose one object or service nearby. Your job is not to prove it uses AI. Your job is to investigate carefully.</p>
+        <div class="mission-strip">
+          <p><span>Your mission</span> Decide whether the evidence really supports the claim that AI is involved.</p>
+          <p><span>You’ll leave knowing</span> “Smart” is a label. Good investigators trace inputs, outputs, decisions, and uncertainty.</p>
+        </div>
+
+        <div class="steps">
+          <section class="step">
+            <span>1</span>
+            <div>
+              <h3>Choose your mystery</h3>
+              <p>A phone camera, game, streaming app, speaker, watch, search box, toy, or something else.</p>
+              <label for="mystery-object">What did you choose?</label>
+              <input id="mystery-object" type="text" maxlength="80" placeholder="Example: the music app on our tablet">
+            </div>
+          </section>
+          <section class="step">
+            <span>2</span>
+            <div>
+              <h3>Follow the clues</h3>
+              <fieldset class="clue-list">
+                <legend>Select every clue you can actually observe.</legend>
+                <label><input type="checkbox" value="changes"> It changes its response based on what I do.</label>
+                <label><input type="checkbox" value="predicts"> It predicts, recommends, recognizes, or generates something.</label>
+                <label><input type="checkbox" value="data"> It seems to use examples or data from the past.</label>
+                <label><input type="checkbox" value="updates"> Its behavior can improve or change after updates.</label>
+                <label><input type="checkbox" value="unknown"> I do not have enough evidence yet.</label>
+              </fieldset>
+              <button class="button secondary small" id="check-clues" type="button">Reflect on my clues</button>
+              <p class="reflection" id="clue-reflection" aria-live="polite"></p>
+            </div>
+          </section>
+          <section class="step">
+            <span>3</span>
+            <div>
+              <h3>Map the system</h3>
+              <div class="question-grid">
+                <label>What might go in?<textarea placeholder="Sounds, pictures, words, clicks, location…"></textarea></label>
+                <label>What comes out?<textarea placeholder="A suggestion, label, answer, action…"></textarea></label>
+                <label>Who could be helped?<textarea placeholder="Think beyond the person holding it."></textarea></label>
+                <label>What if it is wrong?<textarea placeholder="Annoying, unfair, unsafe, confusing…"></textarea></label>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="takeaway-bridge">
+          <p class="eyebrow">Why this matters outside the activity</p>
+          <h3>“Uses AI” can change what people buy, trust, or allow.</h3>
+          <p>Products, schools, employers, and public services may describe systems as intelligent or AI-powered. Following the inputs, outputs, decisions, and evidence helps you ask what the label actually means.</p>
+          <p><strong>Takeaway in action:</strong> Before trusting the label, ask what evidence would confirm—or challenge—it.</p>
+        </div>
+        <div class="pip-note">
+          <strong>Pip’s field note:</strong> “I don’t know yet” is not a failed answer. It is an honest place to begin an investigation.
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-panel sky-panel" id="activity-boxes" hidden>
+      <div class="panel-inner">
+        <button class="close-panel" type="button" aria-label="Close activity">×</button>
+        <p class="eyebrow">Activity 02 · Test</p>
+        <h2>The Three Mystery Boxes</h2>
+        <p class="panel-lede">Each box behaves differently. Try inputs, observe outputs, and decide what kind of box it might be.</p>
+        <div class="mission-strip">
+          <p><span>Your mission</span> Design tests that reveal how each box behaves—not just tests it can easily pass.</p>
+          <p><span>You’ll leave knowing</span> Rules, predictions, and generated responses can look similar until you probe their limits.</p>
+        </div>
+
+        <div class="box-lab">
+          <div class="mystery-box" data-box="rule">
+            <h3>Box A</h3>
+            <p class="box-hint">Try a number from 1 to 20.</p>
+            <label>Input <input type="text" inputmode="numeric" aria-label="Input for Box A"></label>
+            <button class="button small" type="button">Test</button>
+            <output aria-live="polite">Waiting for a test…</output>
+          </div>
+          <div class="mystery-box" data-box="predict">
+            <h3>Box B</h3>
+            <p class="box-hint">Try: sunny, rainy, snowy, or windy.</p>
+            <label>Input <input type="text" aria-label="Input for Box B"></label>
+            <button class="button small" type="button">Test</button>
+            <output aria-live="polite">Waiting for a test…</output>
+          </div>
+          <div class="mystery-box" data-box="generate">
+            <h3>Box C</h3>
+            <p class="box-hint">Give it two harmless words.</p>
+            <label>Input <input type="text" aria-label="Input for Box C"></label>
+            <button class="button small" type="button">Test</button>
+            <output aria-live="polite">Waiting for a test…</output>
+          </div>
+        </div>
+
+        <fieldset class="box-guess">
+          <legend>What is your best explanation?</legend>
+          <label>Box A
+            <select data-answer="rule">
+              <option value="">Choose...</option>
+              <option value="rule">Follows a written rule</option>
+              <option value="predict">Predicts from examples</option>
+              <option value="generate">Generates a new response</option>
+            </select>
+          </label>
+          <label>Box B
+            <select data-answer="predict">
+              <option value="">Choose...</option>
+              <option value="rule">Follows a written rule</option>
+              <option value="predict">Predicts from examples</option>
+              <option value="generate">Generates a new response</option>
+            </select>
+          </label>
+          <label>Box C
+            <select data-answer="generate">
+              <option value="">Choose...</option>
+              <option value="rule">Follows a written rule</option>
+              <option value="predict">Predicts from examples</option>
+              <option value="generate">Generates a new response</option>
+            </select>
+          </label>
+          <button class="button secondary small" id="check-boxes" type="button">Check my explanation</button>
+          <p class="reflection" id="box-reflection" aria-live="polite"></p>
+        </fieldset>
+        <div class="takeaway-bridge">
+          <p class="eyebrow">Why this matters outside the activity</p>
+          <h3>Important systems need tougher tests than their best examples.</h3>
+          <p>A recommendation, detector, or generated answer may look impressive on familiar inputs and fail on unusual people, conditions, languages, or situations.</p>
+          <p><strong>Takeaway in action:</strong> Test the edge, the exception, and the uncertain case—not only the demo that works.</p>
+        </div>
+        <div class="pip-note">
+          <strong>Try a stronger test:</strong> What input could reveal the edge of each box’s abilities? Good investigators test more than the happy path.
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-panel leaf-panel" id="activity-backpack" hidden>
+      <div class="panel-inner">
+        <button class="close-panel" type="button" aria-label="Close activity">×</button>
+        <p class="eyebrow">Activity 03 · Question</p>
+        <h2>The Data Backpack</h2>
+        <p class="panel-lede">Imagine an AI that identifies neighborhood birds. Its “backpack” contains the examples it learned from.</p>
+        <div class="mission-strip">
+          <p><span>Your mission</span> Repack the examples so the bird identifier has a fairer, safer view of the world.</p>
+          <p><span>You’ll leave knowing</span> Data quality includes what is missing, repeated, private, outdated, and collected without enough context.</p>
+        </div>
+
+        <div class="backpack-lab">
+          <div class="backpack" aria-label="A backpack containing example cards">
+            <div class="backpack-pocket">
+              <button class="data-card" type="button" data-kind="common">18 robin photos</button>
+              <button class="data-card" type="button" data-kind="common">14 pigeon photos</button>
+              <button class="data-card" type="button" data-kind="duplicate">8 copies of one duck photo</button>
+              <button class="data-card" type="button" data-kind="missing">1 blurry owl photo</button>
+              <button class="data-card" type="button" data-kind="private">A photo with a child’s address visible</button>
+              <button class="data-card" type="button" data-kind="narrow">Photos taken only in summer</button>
+            </div>
+          </div>
+          <div class="backpack-observation">
+            <p class="eyebrow">Tap the cards</p>
+            <h3 id="data-card-title">What do you notice?</h3>
+            <p id="data-card-copy">The number and variety of examples can shape what an AI notices—and what it misses.</p>
+          </div>
+        </div>
+
+        <div class="sort-area">
+          <h3>Pack a better backpack</h3>
+          <p>Which improvements matter? Choose at least three.</p>
+          <div class="improvement-grid">
+            <label><input type="checkbox"> Add birds from different seasons.</label>
+            <label><input type="checkbox"> Add nighttime and low-light photos.</label>
+            <label><input type="checkbox"> Remove accidental private details.</label>
+            <label><input type="checkbox"> Reduce repeated copies.</label>
+            <label><input type="checkbox"> Add birds common in other neighborhoods.</label>
+            <label><input type="checkbox"> Ask bird experts and local residents what is missing.</label>
+          </div>
+          <button class="button secondary small" id="pack-better" type="button">Review my backpack</button>
+          <p class="reflection" id="backpack-reflection" aria-live="polite"></p>
+        </div>
+
+        <div class="takeaway-bridge">
+          <p class="eyebrow">Why this matters outside the activity</p>
+          <h3>What gets collected can shape who a system notices.</h3>
+          <p>Training data can influence whether a tool works across seasons, neighborhoods, bodies, accents, devices, or environments—and whether private information is exposed along the way.</p>
+          <p><strong>Takeaway in action:</strong> Ask who and what is missing, overrepresented, outdated, or included without enough permission.</p>
+        </div>
+        <div class="pip-note">
+          <strong>Remember:</strong> More data is not automatically better data. Ask whether it is relevant, varied, accurate, respectful, and collected with permission.
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-panel gold-panel" id="activity-plan" hidden>
+      <div class="panel-inner">
+        <button class="close-panel" type="button" aria-label="Close activity">×</button>
+        <p class="eyebrow">Activity 04 · Choose</p>
+        <h2>My AI Curiosity Plan</h2>
+        <p class="panel-lede">Use this before and after asking an AI for help. Nothing you type here leaves your device.</p>
+        <div class="mission-strip">
+          <p><span>Your mission</span> Ask for the kind of help that moves your thinking forward without handing over the whole task.</p>
+          <p><span>You’ll leave knowing</span> You can choose where AI joins your process—and which ideas, words, decisions, or struggles remain yours.</p>
+        </div>
+
+        <form id="curiosity-form">
+          <div class="plan-columns">
+            <section>
+              <p class="plan-label">Before AI</p>
+              <label>What am I curious about?
+                <textarea name="curious" placeholder="I want to understand…"></textarea>
+              </label>
+              <label>What do I already think or know?
+                <textarea name="know" placeholder="My starting idea is…"></textarea>
+              </label>
+              <label>What will I try first?
+                <textarea name="try" placeholder="I will sketch, calculate, search, test…"></textarea>
+              </label>
+              <label>What kind of help do I want?
+                <select name="help">
+                  <option value="">Choose a kind of help...</option>
+                  <option>A hint, not the answer</option>
+                  <option>Questions that help me think</option>
+                  <option>An explanation of one confusing idea</option>
+                  <option>Feedback on something I made</option>
+                  <option>Another possible point of view</option>
+                </select>
+              </label>
+            </section>
+            <section>
+              <p class="plan-label">After AI</p>
+              <label>What did AI help me notice?
+                <textarea name="notice" placeholder="I noticed…"></textarea>
+              </label>
+              <label>What might be wrong, uncertain, or missing?
+                <textarea name="missing" placeholder="I should not assume…"></textarea>
+              </label>
+              <label>How could I check it?
+                <textarea name="check" placeholder="I could compare, test, ask…"></textarea>
+              </label>
+              <label>What am I curious about now?
+                <textarea name="next" placeholder="My next question is…"></textarea>
+              </label>
+            </section>
+          </div>
+          <div class="ownership-choice">
+            <p><strong>One part I want to keep mine:</strong></p>
+            <label><input type="radio" name="mine" value="idea"> My original idea</label>
+            <label><input type="radio" name="mine" value="words"> My own words or artwork</label>
+            <label><input type="radio" name="mine" value="decision"> My final decision</label>
+            <label><input type="radio" name="mine" value="process"> My problem-solving process</label>
+          </div>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Make my plan</button>
+            <button class="button secondary" id="clear-plan" type="button">Clear</button>
+          </div>
+          <div class="plan-summary" id="plan-summary" aria-live="polite" hidden></div>
+        </form>
+        <div class="takeaway-bridge">
+          <p class="eyebrow">Why this matters outside the activity</p>
+          <h3>Tools can assist your work without becoming the author of your thinking.</h3>
+          <p>At school, at work, and while creating, you may need to explain what you contributed, what a tool contributed, and what you checked before using the result.</p>
+          <p><strong>Takeaway in action:</strong> Choose AI’s role before you begin, keep meaningful ownership, and verify consequential claims.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-panel wrapped-panel" id="activity-wrapped" hidden>
+      <div class="panel-inner">
+        <button class="close-panel" type="button" aria-label="Close activity">×</button>
+        <p class="eyebrow">Project trail · Data storytelling</p>
+        <h2>My Mini Wrapped</h2>
+        <p class="panel-lede">A chart is not the story by itself. You choose what to measure, what to show, and what not to claim.</p>
+        <div class="mission-strip">
+          <p><span>Your mission</span> Build a chart, then challenge the story it seems to tell.</p>
+          <p><span>You’ll leave knowing</span> The same numbers can create different impressions depending on labels, scale, context, and what is left out.</p>
+        </div>
+
+        <div class="wrapped-builder">
+          <form id="wrapped-form">
+            <label>Choose a safe, non-private topic
+              <select name="topic">
+                <option value="Books read">Books read</option>
+                <option value="Things built">Things built</option>
+                <option value="Drawings made">Drawings made</option>
+                <option value="Outdoor adventures">Outdoor adventures</option>
+                <option value="Kind acts noticed">Kind acts noticed</option>
+              </select>
+            </label>
+            <fieldset>
+              <legend>Add four numbers</legend>
+              <div class="number-row">
+                <label>Part 1<input name="v1" type="number" min="0" max="100" value="3"></label>
+                <label>Part 2<input name="v2" type="number" min="0" max="100" value="5"></label>
+                <label>Part 3<input name="v3" type="number" min="0" max="100" value="4"></label>
+                <label>Part 4<input name="v4" type="number" min="0" max="100" value="7"></label>
+              </div>
+            </fieldset>
+            <label>What do the four parts mean?
+              <select name="period">
+                <option value="seasons">Seasons</option>
+                <option value="weeks">Weeks</option>
+                <option value="projects">Projects</option>
+                <option value="chapters">Chapters</option>
+              </select>
+            </label>
+            <fieldset>
+              <legend>Choose how to frame the same numbers</legend>
+              <label>Chart scale
+                <select name="scale">
+                  <option value="zero">Start at zero</option>
+                  <option value="zoom">Zoom in on the differences</option>
+                </select>
+              </label>
+              <label>Headline
+                <select name="headline">
+                  <option value="careful">A careful observation</option>
+                  <option value="dramatic">A dramatic claim</option>
+                  <option value="question">A question to investigate</option>
+                </select>
+              </label>
+            </fieldset>
+            <button class="button primary" type="submit">Build my data story</button>
+          </form>
+
+          <div class="wrapped-preview" id="wrapped-preview" aria-live="polite">
+            <p class="eyebrow">Your preview</p>
+            <h3>Books read</h3>
+            <div class="chart-with-axes">
+              <div class="y-axis" aria-hidden="true">
+                <span class="axis-high">7</span>
+                <span class="axis-mid">3.5</span>
+                <span>0</span>
+              </div>
+              <div class="mini-chart" aria-label="A bar chart of books read across four seasons">
+                <div><span style="height:43%"></span><small>Spring</small></div>
+                <div><span style="height:71%"></span><small>Summer</small></div>
+                <div><span style="height:57%"></span><small>Fall</small></div>
+                <div><span style="height:100%"></span><small>Winter</small></div>
+              </div>
+            </div>
+            <p class="axis-label">Books read</p>
+            <p class="wrapped-insight">Winter has the largest value. The values changed over time—but the chart alone cannot explain why.</p>
+            <p class="wrapped-headline">Books read changed across four seasons.</p>
+            <p class="wrapped-framing">This view starts at zero, so bar heights stay proportional to the values.</p>
+          </div>
+        </div>
+
+        <div class="story-check">
+          <h3>Challenge your own story before you share it</h3>
+          <div class="question-grid">
+            <label>What does the chart show?<textarea placeholder="Only describe what the numbers support."></textarea></label>
+            <label>What does it not explain?<textarea placeholder="Reasons, feelings, missing days, changing definitions…"></textarea></label>
+            <label>What choice shaped the story?<textarea placeholder="The topic, time period, labels, scale, colors…"></textarea></label>
+            <label>What would you ask next?<textarea placeholder="What new data or conversation would help?"></textarea></label>
+          </div>
+          <div class="claim-check">
+            <p class="eyebrow">Evidence check</p>
+            <h3>Which claim is safest to make from the chart alone?</h3>
+            <label><input type="radio" name="wrapped-claim" value="cause"> <span data-claim="cause">Winter is highest because I became more motivated.</span></label>
+            <label><input type="radio" name="wrapped-claim" value="fact"> <span data-claim="fact">Winter has the highest recorded value.</span></label>
+            <label><input type="radio" name="wrapped-claim" value="future"> <span data-claim="future">Books read will definitely keep rising.</span></label>
+            <button class="button secondary small" id="check-wrapped-claim" type="button">Check the claim</button>
+            <p class="reflection" id="wrapped-claim-reflection" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="takeaway-bridge">
+          <p class="eyebrow">Why this matters outside the activity</p>
+          <h3>Charts influence attention before anyone reads the fine print.</h3>
+          <p>News, social posts, school reports, public dashboards, and product summaries use framing choices that can clarify a pattern—or make it look more dramatic than the evidence supports.</p>
+          <p><strong>Takeaway in action:</strong> Separate observation from explanation, inspect the scale, and ask what was not measured.</p>
+        </div>
+        <div class="pip-note">
+          <strong>Pip’s data note:</strong> Use made-up numbers or information that is safe to share. A fun visualization never requires your full name, location, school, or private habits.
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-panel future-panel" id="activity-future" hidden>
+      <div class="panel-inner">
+        <button class="close-panel" type="button" aria-label="Close activity">×</button>
+        <p class="eyebrow">Project trail · Emerging technology</p>
+        <h2>Seven Tiny Systems Labs</h2>
+        <p class="panel-lede">Explore seven emerging-technology ideas through one small prediction at a time. The goal is not to master the field. It is to notice the system underneath the buzzword.</p>
+        <div class="mission-strip">
+          <p><span>Your mission</span> Change one condition, predict what happens, and explain which rule or representation produced the result.</p>
+          <p><span>You’ll leave knowing</span> Big technologies become less mysterious when you inspect their inputs, rules, representations, limits, and consequences.</p>
+        </div>
+
+        <div class="experiment-switcher" role="tablist" aria-label="Choose an experiment">
+          <button type="button" class="experiment-tab active" data-experiment="water" role="tab" aria-selected="true">Virtual water pipe</button>
+          <button type="button" class="experiment-tab" data-experiment="mesh" role="tab" aria-selected="false">3D mesh</button>
+          <button type="button" class="experiment-tab" data-experiment="quantum" role="tab" aria-selected="false">Quantum pair</button>
+          <button type="button" class="experiment-tab" data-experiment="ledger" role="tab" aria-selected="false">Linked ledger</button>
+          <button type="button" class="experiment-tab" data-experiment="neuron" role="tab" aria-selected="false">Spiking neuron</button>
+          <button type="button" class="experiment-tab" data-experiment="flock" role="tab" aria-selected="false">Bird flock</button>
+          <button type="button" class="experiment-tab" data-experiment="energy" role="tab" aria-selected="false">Computer energy</button>
+        </div>
+
+        <div class="experiment-stage" id="experiment-stage">
+          <div class="experiment-visual water-visual" aria-hidden="true">
+            <div class="pipe"><span class="water-flow"></span><span class="clog"></span></div>
+          </div>
+          <div class="experiment-copy">
+            <p class="activity-skill">Virtual water pipe</p>
+            <h3>A formula predicts water flow.</h3>
+            <p>The formula knows the pipe size and water speed. Then the real pipe becomes partly clogged.</p>
+            <fieldset>
+              <legend>What do you predict?</legend>
+              <label><input type="radio" name="experiment-answer" value="higher"> Real flow becomes higher than predicted.</label>
+              <label><input type="radio" name="experiment-answer" value="lower"> Real flow becomes lower than predicted.</label>
+              <label><input type="radio" name="experiment-answer" value="same"> Nothing changes.</label>
+            </fieldset>
+            <button class="button secondary small" id="test-experiment" type="button">Test my prediction</button>
+            <p class="reflection" id="experiment-reflection" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <details class="technical-depth" id="technical-depth">
+          <summary>Go deeper: show me the math or technical idea</summary>
+          <div class="depth-grid">
+            <div>
+              <p class="eyebrow">Technical lens</p>
+              <h3 class="depth-title"></h3>
+              <div class="formula-card"></div>
+            </div>
+            <div>
+              <p class="depth-body"></p>
+              <p class="depth-try"></p>
+            </div>
+          </div>
+        </details>
+
+        <div class="experiment-questions">
+          <p class="eyebrow">Your model-checking toolkit</p>
+          <h3>Three questions for every system</h3>
+          <ol>
+            <li>What rules or information does the model use?</li>
+            <li>What changed in the real world?</li>
+            <li>What important thing did the model leave out?</li>
+          </ol>
+        </div>
+
+        <div class="real-world-bridge" id="experiment-bridge">
+          <div class="bridge-visual" aria-hidden="true"></div>
+          <div class="bridge-copy">
+            <p class="eyebrow">Why this matters outside the activity</p>
+            <h3></h3>
+            <p class="bridge-body"></p>
+            <p class="bridge-limit"></p>
+            <p class="honest-takeaway"></p>
+          </div>
+        </div>
+
+        <div class="code-bridge">
+          <div>
+            <p class="eyebrow">Want to keep building?</p>
+            <h3>Open the original notebooks</h3>
+            <p>Keep exploring with the original Python notebooks in Google Colab. Setup and library versions may need updating.</p>
+          </div>
+          <div class="repo-links">
+            <a class="button secondary" href="https://github.com/riacheruvu/wwcode-challenge-2024" target="_blank" rel="noopener">WWCode experiments ↗</a>
+            <a class="button secondary" href="https://github.com/riacheruvu/DIY-Wrapped-Data-Science" target="_blank" rel="noopener">DIY Wrapped notebook ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="use-guide" id="use-guide" aria-labelledby="use-title">
+      <div class="section-heading">
+        <p class="eyebrow">Use the field guide</p>
+        <h2 id="use-title">Try it your way.</h2>
+        <p>Choose one activity and make the format fit your setting. No AI account is required.</p>
+        <p class="fit-note"><strong>Suggested fit:</strong> approximately grades 5–9, with plenty of room to simplify or go deeper. This range is provisional, not formally validated.</p>
+      </div>
+      <div class="use-grid">
+        <article>
+          <span aria-hidden="true">01</span>
+          <h3>Pick one question</h3>
+          <p>Try a single 10–30 minute activity. The guide is modular on purpose.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">02</span>
+          <h3>Think before explaining</h3>
+          <p>Make a claim, find evidence, and give yourself permission to revise it.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">03</span>
+          <h3>Adapt the format</h3>
+          <p>Speak, draw, print, role-play, or project an activity. Clicking is never the only way in.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">04</span>
+          <h3>Notice what changed</h3>
+          <p>Did a question make you more curious, skeptical, confused, or inventive?</p>
+        </article>
+      </div>
+      <div class="resource-credentials">
+        <div>
+          <p class="eyebrow">Why this guide exists</p>
+          <h3>Built from both sides of AI: making systems and teaching people.</h3>
+        </div>
+        <p>
+          Ria Cheruvu is a trustworthy AI architect, technical educator, author, and speaker who began working
+          in technology at age 14. This guide draws on her experience building high-stakes AI systems and
+          explaining AI, data, ethics, and emerging technology to learners at many levels.
+        </p>
+        <a class="button secondary" href="https://riacheruvu.github.io/" target="_blank" rel="noopener">About Ria’s work ↗</a>
+      </div>
+      <p class="pilot-note"><strong>Honest note:</strong> This is an evolving public resource, not a validated curriculum. The activities are intentionally open and adaptable.</p>
+    </section>
+
+    <section class="feedback-lab" id="feedback" aria-labelledby="feedback-title">
+      <div class="section-heading">
+        <p class="eyebrow">Help improve the field guide</p>
+        <h2 id="feedback-title">What worked? What made you pause?</h2>
+        <p>Build a short feedback note here. It stays on this device unless you choose to copy and share it.</p>
+      </div>
+      <div class="feedback-layout">
+        <form id="feedback-form">
+          <label>I am responding as
+            <select name="role">
+              <option value="someone who explored independently">I explored independently</option>
+              <option value="someone who explored with others">I explored with others</option>
+              <option value="someone who guided a group">I helped guide a group</option>
+              <option value="someone reviewing the resource">I reviewed the resource</option>
+            </select>
+          </label>
+          <label>Activity
+            <select name="activity">
+              <option>AI in the Room?</option>
+              <option>The Three Mystery Boxes</option>
+              <option>The Data Backpack</option>
+              <option>My AI Curiosity Plan</option>
+              <option>My Mini Wrapped</option>
+              <option>Seven Tiny Systems Labs</option>
+              <option>The whole field guide</option>
+            </select>
+          </label>
+          <label>Something that helped me think
+            <textarea name="worked" maxlength="500" placeholder="A question, interaction, example, or moment…"></textarea>
+          </label>
+          <label>Something confusing, missing, or less useful
+            <textarea name="improve" maxlength="500" placeholder="Where did you pause, lose interest, or want more?"></textarea>
+          </label>
+          <label>One idea for what should happen next
+            <textarea name="next" maxlength="500" placeholder="A topic, challenge, format, or improvement…"></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Build feedback note</button>
+            <button class="button secondary" id="clear-feedback" type="button">Clear</button>
+          </div>
+        </form>
+        <div class="feedback-preview">
+          <p class="eyebrow">Your note</p>
+          <div id="feedback-output" aria-live="polite">
+            <p>Complete any prompt that feels useful. Honest uncertainty and “I stopped here” are valuable feedback.</p>
+          </div>
+          <button class="button secondary" id="copy-feedback" type="button" disabled>Copy feedback</button>
+          <a class="button secondary" href="https://github.com/riacheruvu/ai-for-young-minds/issues/new/choose" target="_blank" rel="noopener">Open public feedback page ↗</a>
+          <p class="privacy-reminder"><strong>Keep it non-identifying:</strong> leave out names, ages, schools, locations, contact information, and private conversations. Someone 18 or older should submit anything to the public feedback page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-pip" aria-hidden="true">✦</div>
+      <p class="eyebrow">Field note complete</p>
+      <h2>Keep wondering. What will you ask next?</h2>
+      <a class="button primary" href="#field-stops">Explore another activity</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Ria Cheruvu, with AI collaboration · A small, evolving public resource</p>
+    <p>Last reviewed: June 14, 2026 · <a href="LICENSE">License</a> · <a href="SOURCES.md">Sources</a> · <a href="SAFETY.md">Safety</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+name: Educator or facilitator feedback
+description: Share observations from classroom, library, family, or youth-program use.
+title: "[Educator feedback] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Specific observations are especially useful. Please describe what learners did or asked without including identifying information.
+  - type: dropdown
+    id: setting
+    attributes:
+      label: Setting
+      options:
+        - Classroom
+        - Library
+        - Club or youth program
+        - Family or home
+        - Independent review
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: activity
+    attributes:
+      label: Activity
+      options:
+        - AI in the Room?
+        - The Three Mystery Boxes
+        - The Data Backpack
+        - My AI Curiosity Plan
+        - My Mini Wrapped
+        - Seven Tiny Systems Labs
+        - Multiple activities
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What did learners say, do, question, or revise?
+      description: Summarize patterns rather than identifying individual learners.
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: Where did facilitation or comprehension become difficult?
+  - type: textarea
+    id: adaptation
+    attributes:
+      label: How did you adapt the activity?
+  - type: textarea
+    id: next
+    attributes:
+      label: What change would make this more useful?
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: This report contains no learner names, schools, contact details, precise locations, or other identifying information.
+          required: true
